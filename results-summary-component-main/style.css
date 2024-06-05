@@ -1,0 +1,177 @@
+:root {
+    /* Primary */
+
+    --LightRed: hsl(0, 100%, 67%);
+    --OrangeyYellow: hsl(39, 100%, 56%);
+    --GreenTeal: hsl(166, 100%, 37%);
+    --CobaltBlue: hsl(234, 85%, 45%);
+
+    /* Gradients */
+
+    --LightSlateBlue: hsl(252, 100%, 67%);
+    --LightRoyalBlue: hsl(241, 81%, 54%);
+
+    --VioletBlue: hsla(256, 72%, 46%, 1);
+    --PersianBlue: hsla(241, 72%, 46%, 0);
+
+    /* Neutral */
+
+    --White: hsl(0, 0%, 100%);
+    --PaleBlue: hsl(221, 100%, 96%);
+    --LightLavender: hsl(241, 100%, 89%);
+    --DarkGrayBlue: hsl(224, 30%, 27%);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: "Hanken Grotesk";
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 50%;
+    box-shadow: 5px 5px 5px;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px 0 hsla(252, 100%, 67%,.15), 0 6px 20px 0 hsla(252, 100%, 67%,.15);
+}
+
+/* RESULT */
+
+.result-box {
+    width: 45%;
+    background-image: linear-gradient(var(--LightSlateBlue), var(--LightRoyalBlue));
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.result-title {
+    color: var(--LightLavender);
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.score-value {
+    background-image: linear-gradient(var(--VioletBlue), var(--PersianBlue));
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1rem auto;
+}
+
+.reached-score {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--White);
+    margin: 0;
+}
+
+.total-score {
+    color: lightblue;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.result-described {
+    font-weight: 700;
+    color: var(--White);
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.result-message {
+    width: 80%;
+    color: var(--LightLavender);
+    font-size: .9rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* SUMMARY */
+
+.summary-box {
+    padding: 1rem 2rem;
+    width: 45%;
+}
+
+.summary-title{
+    color: var(--DarkGrayBlue);
+}
+
+.sum-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: .5rem;
+    padding-right: .7rem;
+    border-radius: .5rem;
+    margin-bottom: .7rem;
+}
+
+.sum-item p img {
+    position: relative;
+    top: 15%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.sum-reaction {
+    color: var(--LightRed);
+    background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+.sum-memory {
+    color: var(--OrangeyYellow);
+    background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+.sum-verbal {
+    color: var(--GreenTeal);
+    background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+.sum-visual {
+    color: var(--CobaltBlue);
+    background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+.total-score-value {
+    color: gray;
+}
+
+.reached-score-value {
+    color: black;
+}
+
+.button-wrapper button {
+    width: 100%;
+    background-color: var(--DarkGrayBlue);
+    color: var(--PaleBlue);
+    height: 2.7rem;
+    margin-top: 1.5rem;
+    border-radius: 1.5rem;
+    font-family: "Hanken Grotesk";
+    font-size: 1rem;
+
+}
+
+.attribution {
+    position: fixed;
+    bottom: 0%;
+    text-align: center;
+    width: 100%;
+}
